@@ -42,8 +42,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(13, 100px);
   grid-gap: 8px;
+  grid-template-columns: repeat(13, 100px);
 }
 
 .word-wrap {
