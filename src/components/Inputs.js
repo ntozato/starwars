@@ -2,7 +2,10 @@ import React, { useContext } from 'react';
 import planetsContext from '../context/Context';
 
 function Inputs() {
-  const { filterPlanets, filterOptions, filterByNumber, columns } = useContext(planetsContext);
+  const { filterPlanets,
+    filterOptions,
+    filterByNumber,
+    columns } = useContext(planetsContext);
 
   return (
     <div>
