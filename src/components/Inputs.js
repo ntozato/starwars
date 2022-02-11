@@ -5,6 +5,7 @@ function Inputs() {
   const { filterPlanets,
     filterOptions,
     filterByNumber,
+    resetFilter,
     columns } = useContext(planetsContext);
 
   return (
@@ -50,6 +51,7 @@ function Inputs() {
           Filtrar
 
         </button>
+        <button data-testid="filter" type="button" onClick={ resetFilter }>X</button>
       </div>
     </div>
   );

@@ -50,6 +50,22 @@ function Provider({ children }) {
     setFilteredPlanets(results);
   }
 
+  const resetFilter = () => {
+    setColumns(['population',
+      'orbital_period',
+      'diameter',
+      'rotation_period',
+      'surface_water']);
+
+    setOptions({ column: 'population',
+      name: '',
+      comparison: 'maior que',
+      number: 0,
+    });
+
+    fetchData();
+  };
+
   const filterPlanets = ({ target }) => {
     const { value } = target;
     setOptions({ ...options, name: value });
@@ -80,6 +96,7 @@ function Provider({ children }) {
     filterByNumber,
     newColumns,
     columns,
+    resetFilter,
   };
 
   return (
